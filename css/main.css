@@ -203,6 +203,9 @@ header .menu .menu_btn{
 .swiper{
     height:100vh;
 }
+.s1{
+    height: 100vh;
+}
 .s1 .swiper-slide {
     background-position: center;
     background-repeat: no-repeat;
@@ -277,7 +280,7 @@ header .menu .menu_btn{
 }
 
 .s1 .swiper-pagination{
-    margin-bottom: 8vh;
+    bottom: 8vh;
 }
 .s1 .swiper-pagination-bullet{
     width: 28px;
