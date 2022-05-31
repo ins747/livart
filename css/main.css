@@ -277,7 +277,7 @@ header .menu .menu_btn{
 }
 
 .s1 .swiper-pagination{
-    bottom: 80px;
+    bottom: 8vh;
 }
 .s1 .swiper-pagination-bullet{
     width: 28px;
