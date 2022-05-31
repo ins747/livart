@@ -47,6 +47,10 @@ $(document).ready(function(){
                 // 함수 호출
                 addNum();
             }
+            if(index==3){
+                // 함수 호출
+                addNum2();
+            }
             if(index==4){
                 $('.s4 .s4_box div div').addClass('active');
             }else{
@@ -99,6 +103,41 @@ $(document).ready(function(){
         // g : 문자열 전체 검색
         // ?= : 기호 앞과 뒤의 조건을 합쳐줌
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    // s3
+    function addNum2(){
+        // each() 메서드 : 객체 개수만큼 반복(1번)
+        // prop()메서드 : 객체에 속성을 추가하거나, 객체의 속성을 알아내는 메서드, 0 : 초기값
+        $('.addNumber2 h1').each(function(){
+            // $(this) : $('.addNumber h1')를 가리킴
+            // Counter 속성을 객체에 추가함. 초기값은 0, 최종값은 14750000000
+            $(this).prop('Counter', 0).animate({
+                Counter:16
+            }, {
+                // 실행시간
+                duration:1000,
+                // now값이 변하는 단계, 실수로 증가함
+                step:function(now){
+                    // Math.ceil():실수를 정수로 변환(올림)
+                    // numberfn함수를 호출하면서 정수값now를 매개변수로 전달, 함수의 결과값을 num변수에 받아서 저장
+                    var num=numberfn2(Math.ceil(now));
+                    $(this).text(num);
+                }
+            });
+        });
+    }
+    // numberfn함수 선언
+    // 매개변수 x에서 Math.ceil(now)값을 전달받음
+    function numberfn2(x) {
+        // toString()메서드 : 전달받은 x값을 문자열로 변환
+        // replace() 메서드 : 문자열로 바꿔주는 메서드(치환)
+        // \B : 문자가 존재하는지 경계가 아닌 부분 찾기
+        // \d{3} : 문자열 3글자
+        // (?!\d) : 3글자 이상 초가 안됨
+        // g : 문자열 전체 검색
+        // ?= : 기호 앞과 뒤의 조건을 합쳐줌
+        return x.toString().replace(/\B(?=(\d{2})+(?!\d))/g);
     }
     
 });
