@@ -704,14 +704,14 @@ footer p{
 #fp-nav ul li a.active span{
     background-color: transparent;
     border: 1px solid rgba(74, 225, 255);
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: -4px 0 0 -4px;
 }
 #fp-nav ul li:hover a span{
     background-color: transparent;
     border: 1px solid rgba(74, 225, 255);
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: -4px 0 0 -4px;
 }
