@@ -373,6 +373,17 @@ header .menu .menu_btn{
     display: flex;
     gap: 3vw;
 }
+.s3 .bottom .addNumber2{
+    margin-top: 34vw;
+    display: flex;
+    margin-left: 28vw;
+}
+.s3 .bottom h3{
+    color: #fff;
+    padding-top: 4vw;
+    padding-left: 1vw;
+    font-weight: 200;
+}
 
 .s4{
     background-image: url(../img/D-1.png);
