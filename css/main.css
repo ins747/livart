@@ -551,7 +551,7 @@ header .menu .menu_btn{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2vw;
     width: 100%;
-    height: 35vh;
+    height: 38vh;
 }
 .s6 .s6_box ul li{
     background-position: center;
@@ -621,14 +621,14 @@ header .menu .menu_btn{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 20vw;
+    padding-top: 15vw;
 }
 .s7 .fra{
     background-image: url(../img/G-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 20vw;
+    padding-top: 15vw;
 }
 .s7 > div{
     display: grid;
