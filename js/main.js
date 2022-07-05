@@ -62,7 +62,8 @@ $(document).ready(function(){
     // 메인 슬라이드
     var swiper = new Swiper(".mySwiper", {
         autoplay:{
-            delay:4000
+            delay:4000,
+            disableOnInteraction: false
         },
         loop:true,
         pagination: {
